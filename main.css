@@ -1,4 +1,4 @@
-@import @import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Grape+Nuts&family=Montserrat:ital,wght@0,100;0,300;1,200&family=Pacifico&family=Roboto:wght@100&family=Russo+One&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Grape+Nuts&family=Montserrat:ital,wght@0,100;0,300;1,200&family=Pacifico&family=Roboto:wght@100&family=Russo+One&family=Smooch&display=swap');
 
 * {
     margin:0;
@@ -29,7 +29,7 @@ p {
 }
 
 .banner .content {
-    max-width: 900px;
+    max-width: 1000px;
     text-align:center;
 }
 
@@ -216,7 +216,232 @@ section {
     color: #111;    
 }
 
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin-top: 40px;
+}
+
+.expert .content .box {
+    width:250px;
+    margin:15px;
+}
+
+.expert .content .box .imgBx {
+    position:relative;
+    width:100%;
+    height:100%;
+    min-height: 300px;
+}
+
+.expert .content .box .imgBx img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.expert .content .box .imgBx text{
+    padding: 15px 0 5px;
+
+}
+
+.expert .content .box .text h3{
+    font-weight: 400;
+    color:#111;
+
+}
+
 .testimonials {
-    background:url();
+    background:url("https://www.szepnapom.hu/hatterkep/szinek-formak/texturak/fa/evgyuruk006_1024x768.jpg");
     background-size:cover;
 }
+
+.white .titleText,
+.white  p {
+    color: #fff;
+}
+
+.testimonial .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.testimonials .content .box {
+    width:240px;
+    margin:30px;
+    padding:40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content .box .imgBx {
+    position: relative;
+    width: 80px;
+    height:80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.testimonials .content .box .imgBx img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.testimonials .content .box .text {
+    text-align:center;
+}
+
+.testimonials .content .box .text p{
+    color:#666;
+    font-style:italic;
+}
+
+.testimonials .content .box .text h3 {
+    margin-top: 20px;
+    color:#111;
+    font-size:1em;
+    color:#ff0157;
+    font-weight:600;
+}
+
+.contact {
+    background: url("https://c.pxhere.com/photos/f5/e6/bowl_breakfast_close_up_colorful_colors_cuisine_delicious_dish-1529605.jpg!d");
+    background-size:cover;
+}
+
+.contactForm{
+    padding:75px 50px;
+    background:#fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm h3 {
+    color:#111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight:500;
+
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width:100%;
+    margin-top:20px;
+}
+
+.contactForm .inputBox input 
+.contactForm .inputBox textarea{
+    width:100%;
+    border: 1px solid #555;
+    padding:10px;
+    color:#111;
+    outline: none;
+    font-size:16px;
+    font-weight: 300;
+
+}
+
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display:inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width:100px;
+    font-weight: 500;
+    border:none;
+    cursor:pointer;
+
+}
+
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba (0,0,0,0.1);
+    text-align: center;
+
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px){
+    header, 
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation {
+        display:none;
+    }
+
+    header .navigation.active {
+        width:100%;
+        height:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        background-color: #fff;
+
+    }
+
+    header .navigation li {
+        list-style: none;
+        margin-left:0;
+        font-size:2em;
+    }
+
+    .menuToggle {
+        position:relative;
+        width: 40px;
+        height: 40px;
+        background: url("https://img.icons8.com/material-outlined/344/menu--v3.png");
+        background-size: 50px;
+        background-repeat:no-repeat;
+        background-position: center;
+        cursor:pointer;
+
+
+    }
+
+    .menuToggle.active {
+        background: url("https://tse1.mm.bing.net/th?id=OIP.VZGScPFDS_yHhmWrZpl4SQHaHa&pid=Api&rs=1&c=1&qlt=95&w=116&h=116");
+        background-size: 50px;
+        background-repeat:no-repeat;
+        background-position: center;
+
+    }
+    
+}
+
+
